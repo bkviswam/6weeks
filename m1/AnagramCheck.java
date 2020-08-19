@@ -9,14 +9,15 @@ public class AnagramCheck {
 		s1 = s1.toLowerCase();
 		s2 = s2.toLowerCase();
 
-		int [] letters = new int[256];
+		//int [] letters = new int[256];
+		int [] letters = new int[26];
 
 		for (char c : s1.toCharArray()){
-			letters[c]++;
+			letters[c-97]++;
 		}
 
 		for (char c : s2.toCharArray()){
-			letters[c]--;
+			letters[c-97]--;
 		}
 
 		for (int i : letters){
