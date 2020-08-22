@@ -1,5 +1,21 @@
 import java.util.Stack;
 
+/**
+
+206. Reverse Linked List  // Easy
+
+Reverse a singly linked list.
+
+Example:
+
+Input: 1->2->3->4->5->NULL
+Output: 5->4->3->2->1->NULL
+Follow up:
+
+A linked list can be reversed either iteratively or recursively. Could you implement both?
+
+**/
+
 class ListNode{
 	int val;
 	ListNode next;
@@ -8,7 +24,7 @@ class ListNode{
 	}
 }
 public class ReverseLinkedList{
-
+	//iterative
 	public ListNode reverseLinkedList(ListNode l1){
 		ListNode prev = null;
 		ListNode current = l1;
@@ -22,6 +38,7 @@ public class ReverseLinkedList{
 		return prev;
 	}
 
+	//recursive
 	public ListNode reverseLinkedListRecursive(ListNode l1){
 		return reverse(l1, null);
 	}
@@ -46,10 +63,9 @@ public class ReverseLinkedList{
 		l1.next.next.next.next = new ListNode(5);
 
 		rlist.display(l1);
-		//rlist.display(rlist.reverseLinkedList(l1));
-		rlist.display(rlist.reverseLinkedListRecursive(l1));
+		rlist.display(rlist.reverseLinkedList(l1));
+		//rlist.display(rlist.reverseLinkedListRecursive(l1));
 
-		//rlist.display(rlist.reverseLinkedListWithStack(l1));
 
 	}
 	public void display(ListNode node){
