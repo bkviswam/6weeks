@@ -16,6 +16,28 @@ Output : eeeefggkkorss
 
 
 class SortString {
+
+	//optimized version 
+	public String sortII(String s){
+		int [] letters = new int [26];
+		//construct the array
+		for(char c : s.toCharArray()){
+			letters[c-'a']++;
+		} 
+		//iterrate over the array
+
+		StringBuilder sb = new StringBuilder();
+
+		for(int i=0; i<letters.length; i++){
+			for(int j=0; j<letters[i]; j++){
+				sb.append((char)(i + 'a'));
+			}
+		}
+		return sb.toString();
+
+	}
+
+
 	public String sort(String s){
 		char [] cArr = s.toCharArray();
 		Arrays.sort(cArr);
@@ -25,5 +47,6 @@ class SortString {
 		SortString ss = new SortString();
 		String s = "geeksforgeeks";
 		System.out.println("Sorted String :"+ss.sort(s));
+		System.out.println("Sorted String :"+ss.sortII(s));
 	}
 }
