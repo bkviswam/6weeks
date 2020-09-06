@@ -33,8 +33,11 @@ public class MyQueue {
 	}
 
 	public int remove(){
-		int data = head.data;
-		head = head.next;
+		int data = -1;
+		if(!isEmpty()){
+			data = head.data;
+			head = head.next;
+		}
 		if(head == null){
 			tail = null;
 		}
@@ -44,11 +47,14 @@ public class MyQueue {
 	public static void main(String[] args) {
 		MyQueue q = new MyQueue();
 
-		System.out.println(q.isEmpty()); 
+		System.out.println("Q empty :"+q.isEmpty()); 
 		q.add(1);
 		q.add(2);
+		q.display(q.head);
+		System.out.println("Q empty :"+q.isEmpty()); 
 		q.add(3);
 		q.add(100);
+		q.display(q.head);
 		q.add(200);
 		q.add(300);
 		System.out.println("Peek --: "+q.peek());
@@ -57,6 +63,12 @@ public class MyQueue {
 		System.out.println("Removed --: "+q.remove());
 		q.display(q.head);
 		System.out.println("Peek --: "+q.peek());
+		System.out.println("Removed --: "+q.remove());
+		System.out.println("Removed --: "+q.remove());
+		System.out.println("Removed --: "+q.remove());
+		System.out.println("Removed --: "+q.remove());
+		System.out.println("Removed --: "+q.remove());
+		System.out.println("Removed --: "+q.remove());
 
 	}
 
