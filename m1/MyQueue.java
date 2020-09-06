@@ -1,27 +1,27 @@
 public class MyQueue {
 
-	public  class Node {
+	private  class Node {
 		int data;
 		Node next; 
-		public Node(int data){
+		private Node(int data){
 			this.data = data;
 		}
 	}
 
-	public Node head;
-	public Node tail;
+	private Node head;
+	private Node tail;
 
-	public boolean isEmpty(){
+	private boolean isEmpty(){
 		return head == null;
 	}
 
-	public int peek(){
+	private int peek(){
 		if (!isEmpty()){
 			return head.data;
 		}
 		return -1;
 	}
-	public void add(int data){
+	private void add(int data){
 		Node node = new Node(data);
 		if(tail !=null){
 			tail.next = node;
@@ -32,7 +32,7 @@ public class MyQueue {
 		}
 	}
 
-	public int remove(){
+	private int remove(){
 		int data = -1;
 		if(!isEmpty()){
 			data = head.data;
@@ -48,18 +48,24 @@ public class MyQueue {
 		MyQueue q = new MyQueue();
 
 		System.out.println("Q empty :"+q.isEmpty()); 
+		System.out.println("Add data to q : 1");
 		q.add(1);
 		System.out.println("Head : "+q.head.data); 
 		System.out.println("Tail : "+q.tail.data); 
+		System.out.println("Add data to q : 2");
 		q.add(2);
 		System.out.println("Head : "+q.head.data); 
 		System.out.println("Tail : "+q.tail.data); 
 		q.display(q.head);
 		System.out.println("Q empty :"+q.isEmpty()); 
+		System.out.println("Add data to q : 3");
 		q.add(3);
+		System.out.println("Add data to q : 100");
 		q.add(100);
 		q.display(q.head);
+		System.out.println("Add data to q : 200");
 		q.add(200);
+		System.out.println("Add data to q : 300");
 		q.add(300);
 		System.out.println("Head : "+q.head.data); 
 		System.out.println("Tail : "+q.tail.data); 
@@ -81,7 +87,7 @@ public class MyQueue {
 
 	}
 
-	public void display(Node node){
+	private void display(Node node){
 		while(node!=null){
 			System.out.print(node.data+"-->");
 			node = node.next;
