@@ -49,7 +49,11 @@ public class MyQueue {
 
 		System.out.println("Q empty :"+q.isEmpty()); 
 		q.add(1);
+		System.out.println("Head : "+q.head.data); 
+		System.out.println("Tail : "+q.tail.data); 
 		q.add(2);
+		System.out.println("Head : "+q.head.data); 
+		System.out.println("Tail : "+q.tail.data); 
 		q.display(q.head);
 		System.out.println("Q empty :"+q.isEmpty()); 
 		q.add(3);
@@ -57,16 +61,21 @@ public class MyQueue {
 		q.display(q.head);
 		q.add(200);
 		q.add(300);
+		System.out.println("Head : "+q.head.data); 
+		System.out.println("Tail : "+q.tail.data); 
 		System.out.println("Peek --: "+q.peek());
 		q.display(q.head);
 		System.out.println("Removed --: "+q.remove());
 		System.out.println("Removed --: "+q.remove());
+		System.out.println("Head : "+q.head.data); 
+		System.out.println("Tail : "+q.tail.data); 
 		q.display(q.head);
 		System.out.println("Peek --: "+q.peek());
 		System.out.println("Removed --: "+q.remove());
 		System.out.println("Removed --: "+q.remove());
 		System.out.println("Removed --: "+q.remove());
 		System.out.println("Removed --: "+q.remove());
+		System.out.println("Q empty :"+q.isEmpty()); 
 		System.out.println("Removed --: "+q.remove());
 		System.out.println("Removed --: "+q.remove());
 
