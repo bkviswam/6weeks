@@ -1,8 +1,6 @@
 import java.util.Stack;
 
 public class NextBinaryNumber {
-
-
 	/** 
 
 	DCP # 443  // Facebook // Medium
@@ -11,6 +9,30 @@ public class NextBinaryNumber {
 
 	**/
 
+	//optimal solution
+	public int nextBinaryNumber(int num){
+		int rightOne, nextHigherOneBit, rightOnesPattern, next = 0; 
+		if(x > 0) { 
+		    // right most set bit 
+		    rightOne = x & -x; 
+		    // reset the pattern and set next higher bit 
+		    // left part of x will be here 
+		    nextHigherOneBit = x + rightOne; 
+		    // nextHigherOneBit is now part [D] of the above explanation. 
+		    // isolate the pattern 
+		    rightOnesPattern = x ^ nextHigherOneBit; 
+		    // right adjust pattern 
+		    rightOnesPattern = (rightOnesPattern)/rightOne; 
+		    // correction factor 
+		    rightOnesPattern >>= 2; 
+		    // rightOnesPattern is now part [A] of the above explanation.
+		    // integrate new pattern (Add [D] and [A]) 
+		    next = nextHigherOneBit | rightOnesPattern; 
+		} 
+		return next; 
+	}
+
+	//Brute force 
 	private int nextBinaryNumber(int num){
 		
 		int arr [] = new int[2];
@@ -33,8 +55,6 @@ public class NextBinaryNumber {
 		}	
 		return count;
 	}
-
-
 	public static void main(String[] args) {
 		NextBinaryNumber nb = new NextBinaryNumber();
 		int n = 156;		
