@@ -38,22 +38,6 @@ public class ConsecutiveProducts {
 			return nums;
 		}
 
-
-	/**
-
-	private int[] product(int n, int k, int [] nums){
-		if(n==1){
-			return nums[n];
-		// }else if(n< k && n > 1){
-			 nums[n] = product(nums[n], k, nums) *  product(nums[n-1], k, nums);
-		}else{
-			nums[n] = product(nums[n], k, nums) *  product(nums[n-1], k, nums)* product(nums[n-2], k, nums);
-		}
-		return nums[n];
-	}
-
-	**/
-
 	public static void main(String[] args) {
 		ConsecutiveProducts cp = new ConsecutiveProducts();
 		int nums[] = new int[]{1, 3, 3, 6, 5, 7, 0, -3};
