@@ -28,7 +28,7 @@ public class ConsecutiveProducts {
 					j=(n-k)+1;
 				else 
 					j = 0;
-				while(j <= n && j >=0){
+				while(j <= n){
 					product = product * nums[j];
 					j++;
 				}
