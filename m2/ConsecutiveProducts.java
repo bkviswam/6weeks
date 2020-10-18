@@ -21,19 +21,14 @@ public class ConsecutiveProducts {
 	
 	private int[] consecutiveProducts(int [] nums, int k){
 			int n = nums.length-1;
-			int j = 1;
+			int j = 0;
 			while(n > 1){
 				int product = 1;
-				if(n>k)
-					j=(n-k)+1;
-				else 
-					j = 0;
+				j = n>k ? (n-k)+1 : 0;
 				while(j <= n){
-					product = product * nums[j];
-					j++;
+					product *= nums[j++];
 				}
-				nums[n]=product;
-				n--;
+				nums[n--]=product;
 			}
 			return nums;
 		}
