@@ -1,4 +1,4 @@
-.
+
 ├── README.md
 ├── m1
 │   ├── AnagramCheck.java
@@ -44,5 +44,3 @@
 └── m4
     ├── GameOfLife.java
     └── MedianFinder.java
-
-4 directories, 41 files
