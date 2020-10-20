@@ -1,4 +1,8 @@
+# Code repository 
 
+## Directory Tree
+
+```
 ├── README.md
 ├── m1
 │   ├── AnagramCheck.java
@@ -44,3 +48,4 @@
 └── m4
     ├── GameOfLife.java
     └── MedianFinder.java
+```
