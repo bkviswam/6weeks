@@ -1,6 +1,7 @@
 /**
 
-Given an array that contains n numbers out of which except one value all the other values are repeated twice. Find the number in the array that occurs only once.
+Given an array that contains n numbers out of which except one value all the other values are repeated twice. 
+Find the number in the array that occurs only once.
 
 **/
 
@@ -13,7 +14,6 @@ public class FindSingleElemArray{
 		}
 		return res;
 	}
-
 
 	public static void main(String[] args) {
 		FindSingleElemArray fi = new FindSingleElemArray();
