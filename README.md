@@ -7,15 +7,37 @@
 ├── README.md
 ├── amazon
 │   ├── KthFactorOfN.java
+│   ├── LevelOrderTraversal.java
 │   ├── SpiralMatrix.java
 │   └── SpiralMatrixII.java
+├── apple
+│   └── CollatzSequence.java
+├── facebook
+│   ├── AddTwoNumbers.java
+│   ├── CloneOfThatTree.java
+│   ├── GoatLatin.java
+│   ├── InorderTraversal.java
+│   ├── IslandPerimeter.java
+│   ├── LRUCache.java
+│   ├── LargestTreeRow.java
+│   ├── MergeIntervals.java
+│   ├── MoveZeros.java
+│   ├── Pow.java
+│   ├── ProductOfArrayExceptSelf.java
+│   └── ValidParenthesisString.java
 ├── google
 │   ├── Amplitude.java
 │   ├── FindDouble.java
 │   ├── FindSingleElemArray.java
-│   └── ReverseLinkedList.java
+│   ├── NonDupeInteger.java
+│   ├── PalindromicPartitioning.java
+│   ├── PalindromicString.java
+│   ├── ReverseLinkedList.java
+│   └── SmallerElementRight.java
+├── index.html
 ├── m1
 │   ├── AnagramCheck.java
+│   ├── Boustrophedon.java
 │   ├── BuddyStrings.java
 │   ├── CompressString.java
 │   ├── ContinuousSubArraySum.java
@@ -30,6 +52,7 @@
 │   ├── LengthOfLinkedList.java
 │   ├── LengthOfLongestSubstringWORepeatChars.java
 │   ├── LengthOfLongstSubArrayWORepeatingDigits.java
+│   ├── MaxXor.java
 │   ├── MeetingRooms.java
 │   ├── MovingAverage.java
 │   ├── MyQueue.java
@@ -69,7 +92,8 @@
 │   ├── RemoveLeafNodes.java
 │   ├── ReverseWordsII.java
 │   ├── SortColors.java
-│   └── UniquePaths.java
+│   ├── UniquePaths.java
+│   └── ZigZagLevelOrderTraversal.java
 ├── m3
 │   ├── ReconstructIternary.java
 │   └── TopKFrequentWords.java
@@ -80,11 +104,15 @@
 │   ├── MaxNumDs.java
 │   └── MedianFinder.java
 ├── microsoft
+│   ├── FirstUnique.java
 │   ├── PatternMatch.java
 │   └── ThreeSum.java
+├── roku
+│   └── NetworkDelayTime.java
 ├── uber
 │   ├── BinarySearch.java
 │   ├── FirstAndLastPos.java
 │   └── TextJestification.java
 └── updateTree.sh
+
 ```
