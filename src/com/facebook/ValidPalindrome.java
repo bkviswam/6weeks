@@ -3,8 +3,6 @@ package com.facebook;
 /**
  * Given a string s, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
  * <p>
- * <p>
- * <p>
  * Example 1:
  * <p>
  * Input: s = "A man, a plan, a canal: Panama"
