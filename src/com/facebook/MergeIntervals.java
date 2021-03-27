@@ -29,7 +29,7 @@ import java.util.LinkedList;
  */
 public class MergeIntervals {
     public int[][] merge(int[][] intervals) {
-        //Arrays.sort(intervals, (a, b)-> a[0]-b[0]);
+        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
         LinkedList<int[]> merged = new LinkedList<>();
         for (int[] interval : intervals) {
             if (merged.isEmpty() || interval[0] > merged.getLast()[1]) {
@@ -43,7 +43,7 @@ public class MergeIntervals {
 
     public static void main(String[] args) {
         MergeIntervals mi = new MergeIntervals();
-        int[][] intervals = new int[][]{{1, 4}, {1, 11}, {2, 6}, {2, 10}, {2, 20}, {1, 100}, {2, 175}, {0, 200}};
+        int[][] intervals = new int[][]{{0,10},{9,20},{1,31}};
         System.out.println(Arrays.deepToString(mi.merge(intervals)));
     }
 }
