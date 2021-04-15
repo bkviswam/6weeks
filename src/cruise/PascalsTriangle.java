@@ -47,6 +47,6 @@ public class PascalsTriangle {
     public static void main(String[] args) {
         PascalsTriangle ps = new PascalsTriangle();
         int numRows = 5;
-        System.out.println(ps.generate(5));
+        System.out.println(ps.generate(numRows));
     }
 }
