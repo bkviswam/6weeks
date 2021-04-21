@@ -23,11 +23,11 @@ public class MatrixImage2D {
     public char[][] replace(char[][] image, int[][] location, char newColor) {
         int row = image.length;
         int col = image[0].length;
-        int xpos = location[0][0];
-        int ypos = location[0][1];
+        int xPos = location[0][0];
+        int yPos = location[0][1];
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
-                if (i == xpos && j == ypos) {
+                if (i == xPos && j == yPos) {
                     if (image[i][j] != newColor) {
                         dfs(image, i, j, newColor, image[i][j]);
                     }
