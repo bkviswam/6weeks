@@ -15,17 +15,18 @@ import java.util.Arrays;
  * Minimize the total number of operations.
  */
 public class MoveZeroesRight {
-    public void moveZeroes(int[] num) {
-        int i = 0;
-        for (int j = 0; j < num.length; j++) {
-            if (num[j] != 0) {
-                num[i] = num[j];
-                i++;
+    public void moveZeroes(int[] nums) {
+        int slow = 0;
+        int fast = 0;
+        while(fast < nums.length){
+            if(nums[fast]!=0){
+                nums[slow++] = nums[fast++];
+            }else{
+                fast++;
             }
         }
-        while (i < num.length) {
-            num[i] = 0;
-            i++;
+        while(slow < nums.length){
+            nums[slow++] = 0;
         }
     }
 
